@@ -4,8 +4,7 @@
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   color: white;
-  background-image: ;
-}
+  background: url(img/background-inicial.png);
 header {
     width: 100%;
     background-color: #333;
@@ -25,6 +24,7 @@ body {
 a {
   color: black;
   text-decoration: none;
+  background-color: transparent;
 }
 
 .herois{
