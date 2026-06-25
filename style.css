@@ -4,13 +4,41 @@
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
   color: white;
-  background: url(img/background-inicial.png);
+}
+
 header {
     width: 100%;
-    background-color: #333;
+    background-color: transparent;
     padding: 15px 0;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* branco transparente */
+    display: flex;
+    align-items: center; /* alinha imagem e nav no centro verticalmente */
+}
+.instituto{
+  position: absolute;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.instituto:hover{
+  cursor: pointer;
+}
+
+nav{
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: center;
+}
+
+nav a{
+  color: white;
+}
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 body {
@@ -18,7 +46,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    background: url(img/background-inicial.png);
 }
 
 a {
@@ -26,16 +54,39 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
-
-.herois{
-  justify-content: center;
-  display: flex;
-  gap: 10px;
-  border: 2px solid black;
-  border-radius: 10px;
-  width: 260px;
-  padding: 10px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+h1{
+  margin: 0;
+}
+h4{
+  margin: 0;
+  font-size: 20px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 100;
 }
 
+.big {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding-left: 120px;
+  margin-top: 200px;
+  font-size: 30px;
+}
+.secreta{
+  color: red;
+  text-shadow: 0 0 5px rgb(255, 0, 0);
+}
+
+button{
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 3px;
+  width: 180px;
+  height: 40px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+button:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
