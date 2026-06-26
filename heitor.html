@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Batman</title>
+    <link rel="shortcut icon" href="logo_batman.jpg" type="image/png">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background:
+                linear-gradient(rgba(0,0,0,0.85),
+                rgba(0,0,0,0.95)),
+                url("quadrinho-de-batman.webp");
+            background-size: cover;
+            background-attachment: fixed;
+            color: #e5e5e5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-bottom: 4px solid #f0c808;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            color: #f0c808;
+            letter-spacing: 5px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #c0c0c0;
+            margin-top: 10px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .personagens {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: rgba(20, 20, 20, 0.95);
+            border: 2px solid #f0c808;
+            border-radius: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 20px rgba(240, 200, 8, 0.5);
+        }
+
+        .card h2 {
+            color: #f0c808;
+            margin-bottom: 15px;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #444;
+        }
+
+        .conteudo {
+            margin-top: 50px;
+            background-color: rgba(15, 15, 15, 0.95);
+            padding: 30px;
+            border-left: 6px solid #f0c808;
+            border-radius: 10px;
+        }
+
+        .conteudo h2 {
+            color: #f0c808;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            .personagens {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BATMAN</h1>
+        <p>O Cavaleiro das Trevas</p>
+    </header>
+
+    <main>
+
+        <section class="personagens">
+            <div class="card">
+                <h2>Batman</h2>
+                <img src="quadrinho-de-batman.webp" alt="Batman">
+            </div>
+
+            <div class="card">
+                <h2>Bruce Wayne</h2>
+                <img src="bruce_wayne_retangulo.jpeg" alt="Bruce Wayne">
+            </div>
+        </section>
+
+        <section class="conteudo">
+            <h2>Curiosidades</h2>
+
+            <ol>
+                <li>Batman estreou em 1939. Sua primeira aparição foi na revista Detective Comics #27, publicada em maio de 1939.</li>
+
+                <li>Ele não possui superpoderes. Diferente de muitos heróis, Batman depende apenas de inteligência, treinamento físico, tecnologia e recursos financeiros.</li>
+
+                <li>Os criadores Bob Kane e Bill Finger se inspiraram em morcegos, filmes de aventura e até nos desenhos de Leonardo da Vinci.</li>
+
+                <li>Robin surgiu em 1940 para tornar as histórias mais leves e criar alguém com quem os leitores jovens pudessem se identificar.</li>
+
+                <li>O Coringa apareceu logo no início das histórias, mas não foi planejado originalmente para ser seu maior inimigo.</li>
+            </ol>
+        </section>
+
+        <section class="conteudo">
+            <h2>História</h2>
+
+            <p>
+                O Batman é a identidade secreta de Bruce Wayne, um bilionário de Gotham City.
+                Quando criança, Bruce presenciou o assassinato de seus pais, Thomas Wayne e
+                Martha Wayne. Marcado pela tragédia, ele dedicou sua vida a combater o crime.
+                Após anos de treinamento físico, mental e investigativo, criou a identidade do
+                Batman, inspirada em morcegos para causar medo nos criminosos. Com sua
+                inteligência, tecnologia avançada e forte senso de justiça, ele protege Gotham
+                de vilões perigosos como o Coringa, tornando-se um dos maiores heróis da DC
+                Comics.
+            </p>
+        </section>
+
+    </main>
+
+</body>
+</html>
