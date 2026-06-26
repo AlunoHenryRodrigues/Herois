@@ -24,24 +24,42 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        header {
-            text-align: center;
-            padding: 50px 20px;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-bottom: 4px solid #f0c808;
-        }
+    header {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    position: sticky;
+    margin-top: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+.instituto{
+  position: absolute;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.instituto:hover{
+  cursor: pointer;
+}
 
-        header h1 {
-            font-size: 4rem;
-            color: #f0c808;
-            letter-spacing: 5px;
-        }
+nav{
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: center;
+}
 
-        header p {
-            font-size: 1.2rem;
-            color: #c0c0c0;
-            margin-top: 10px;
-        }
+nav a{
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 
         main {
             width: 90%;
@@ -124,13 +142,42 @@
                 width: 90%;
             }
         }
+        button{
+  background-color: black;
+  color: white;
+  text-decoration: none ;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.direita{
+    margin-left: 0;
+}
+.esquerda:hover{
+    color: black;
+    background-color: white;
+}
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>BATMAN</h1>
-        <p>O Cavaleiro das Trevas</p>
+    </header>
+        <a href="index.html">
+            <img src="img/instituto.png" alt="" class="instituto">
+        </a>
+        <nav>
+            <a href="index.html">Pagina Inicial</a>
+            <a href="heitor.html">Batman</a>
+            <a href="capitao_america.html">Capitão América</a>
+            <a href="Henry-spdm.html">Homem-Aranha</a>
+            <a href="homemdeferro2.html">Homem de Ferro</a>
+        </nav>
     </header>
 
     <main>
@@ -176,6 +223,11 @@
                 de vilões perigosos como o Coringa, tornando-se um dos maiores heróis da DC
                 Comics.
             </p>
+            <br>
+            <div class="end">
+            <a href="index.html"><button>🠔 Página Inicial</button></a>
+            <a href="capitao_america.html" class="direita"><button>Próximo Herói ➜</button></a>
+        </div>
         </section>
 
     </main>
