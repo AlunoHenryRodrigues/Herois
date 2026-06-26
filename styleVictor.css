@@ -125,3 +125,13 @@ button:hover{
 .esquerda{
     margin-left: -15px;
 }
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.direita{
+    margin-left: 0;
+}

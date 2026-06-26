@@ -15,27 +15,55 @@
             --text-light: #f8f9fa;     /* Texto claro */
             --text-muted: #9fa0a6;     /* Texto secundário */
         }
+        header {
+    width: 102%;
+    height: 100%;
+    background-color: transparent;
+    padding: 15px 0;
+    position: sticky;
+    margin-top: -10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+.instituto{
+  position: absolute;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.instituto:hover{
+  cursor: pointer;
+}
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-main);
-            color: var(--text-light);
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            min-height: 100vh;
-        }
+nav{
+  display: flex;
+  flex: 1;
+  gap: 50px;
+  justify-content: center;
+}
 
-        /* Container centralizado que organiza a página verticalmente */
-        .page-container {
-            max-width: 680px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 30px; /* Espaço perfeito entre os blocos */
-        }
+nav a{
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-main);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-container{
+    max-width: 680px;
+    margin: 120px auto 40px;
+}
 
         /* Estilização dos Cards Verticais */
         .card {
@@ -164,9 +192,42 @@
             justify-content: center;
             color: var(--text-muted);
         }
+        button{
+  background-color: black;
+  color: white;
+  text-decoration: none ;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.direita{
+    margin-left: 0;
+}
+.esquerda:hover{
+    color: black;
+    background-color: white;
+}
     </style>
 </head>
 <body>
+    <header>
+        <a href="index.html">
+            <img src="img/instituto.png" alt="" class="instituto">
+        </a>
+        <nav>
+            <a href="index.html">Pagina Inicial</a>
+            <a href="heitor.html">Batman</a>
+            <a href="capitao_america.html">Capitão América</a>
+            <a href="Henry-spdm.html">Homem-Aranha</a>
+            <a href="homemdeferro2.html">Homem de Ferro</a>
+        </nav>
+    </header>
 
     <div class="page-container">
         
@@ -214,6 +275,10 @@
             <h2>Próximos Passos</h2>
             <p style="text-align: center;">Explore mais sobre outros heróis em nossas próximas edições.</p>
             <p style="text-align: center; color: var(--iron-gold); font-weight: bold;">Fique atento para mais revelações e histórias de coragem!</p>
+            <br>
+            <div class="end">
+            <a href="Henry-spdm.html"><button>🠔 Herói Anterior</button></a>
+        </div>
         </div>
 
     </div>

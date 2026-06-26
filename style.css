@@ -7,16 +7,16 @@
 }
 
 header {
-    width: 100%;
+    width: 102%;
+    height: 100%;
     background-color: transparent;
     padding: 15px 0;
     position: sticky;
-    top: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* branco transparente */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* branco transparente */
+    margin-top: -10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
-    align-items: center; /* alinha imagem e nav no centro verticalmente */
-    align-items: center; /* alinha imagem e nav no centro verticalmente */
+    align-items: center;
+    background-color: black;
 }
 .instituto{
   position: absolute;
@@ -37,6 +37,7 @@ nav{
 
 nav a{
   color: white;
+  text-decoration: none;
 }
 nav a:hover {
   text-decoration: underline;
